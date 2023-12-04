@@ -11,7 +11,7 @@ $dbname = "crud-app-php";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
-if ($conn->connect_error) {
+if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 } else {
     // Connection successful

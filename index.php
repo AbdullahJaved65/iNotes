@@ -67,7 +67,13 @@ require "config.php";
     </form>
   </div>
   <div class="container">
-
+    <?php
+    $sql = "SELECT * FROM notes";
+    $result = mysqli_query($conn, $sql);
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo var_dump($row);
+    }
+    ?>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
