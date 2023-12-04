@@ -74,13 +74,19 @@
             type="text"
             class="form-control"
             id="note-title"
+            name="note-title"
             aria-describedby="emailHelp"
           />
         </div>
         <div class="mb-3">
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Note Description:</label>
-            <textarea class="form-control" id="note-des" rows="3"></textarea>
+            <label for="note-desc">Note Description:</label>
+            <textarea
+              class="form-control"
+              name="note-desc"
+              id="note-desc"
+              rows="3"
+            ></textarea>
           </div>
         </div>
         <button type="submit" class="btn btn-primary">Add Note</button>
